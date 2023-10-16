@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border scroll-smooth;
+}
+
+::-webkit-scrollbar {
+  @apply bg-gray-400 w-[7px];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800;
+}

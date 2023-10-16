@@ -1,0 +1,58 @@
+{
+  "navLinks": [
+    {
+      "id": "home",
+      "to": "/",
+      "title": "Início"
+    },
+    {
+      "id": "about",
+      "to": "/about",
+      "title": "Sobre"
+    }
+  ],
+  "infoTrilogy": [
+    {
+      "id": "sunrise",
+      "title": "Antes do Amanhecer",
+      "year": 1995,
+      "director": "Richard Linklater",
+      "duration": "1h 45m",
+      "repart": ["Ethan Hawke como Jesse", "Julie Delpy como Celine"],
+      "review": "\"Antes do Amanhecer\" é um filme romântico que segue Jesse e Celine, dois jovens que se conhecem em um trem na Europa e decidem passar uma noite juntos em Viena antes de se separarem no dia seguinte. O filme se concentra em sua profunda conexão emocional e nas conversas íntimas que mantêm enquanto exploram a cidade. É um filme cativante que captura a magia de um encontro casual e a exploração da conexão humana.",
+      "genre": ["Romance", "Drama"],
+      "trailer": "https://www.youtube.com/embed/6MUcuqbGTxc",
+      "imagen": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697144643/before-trilogy/before-sunrise_kqcilf.webp",
+      "poster": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697141463/before-trilogy/poster-before-sunrise_uhcndi.webp",
+      "stream": "/hbomax.webp"
+    },
+    {
+      "id": "sunset",
+      "title": "Antes do Pôr do Sol",
+      "year": 2004,
+      "director": "Richard Linklater",
+      "duration": "1h 20m",
+      "repart": ["Ethan Hawke como Jesse", "Julie Delpy como Celine"],
+      "review": "\"Antes do Pôr do Sol\" retoma a história de Jesse e Celine nove anos após seu primeiro encontro em Viena. Jesse, agora um escritor, reencontra Celine em Paris durante uma turnê de promoção de seu livro. O filme segue sua conversa enquanto passeiam pela cidade e explora como suas vidas mudaram desde o primeiro encontro. É uma continuação emocionante que aprofunda as complexidades das relações humanas.",
+      "genre": ["Romance", "Drama"],
+      "trailer": "https://www.youtube.com/embed/oI3UuneLcyU",
+      "imagen": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697144643/before-trilogy/before-sunset_f5rmnq.webp ",
+      "poster": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697141463/before-trilogy/poster-before-sunset_drwqe4.webp",
+      "stream": "/hbomax.webp"
+    },
+    {
+      "id": "midnight",
+      "title": "Antes da Meia-Noite",
+      "year": 2013,
+      "director": "Richard Linklater",
+      "duration": "1h 48m",
+      "repart": ["Ethan Hawke como Jesse", "Julie Delpy como Celine"],
+      "review": "Em \"Antes da Meia-Noite\", a trilogia culmina na Grécia, onde seguimos a vida de Jesse e Celine depois de passarem vários anos juntos como casal. O filme explora os desafios e tensões que surgem em seu relacionamento à medida que envelhecem e enfrentam questões familiares e pessoais. É um olhar realista e agridoce sobre a vida em casal.",
+      "genre": ["Romance", "Drama"],
+      "trailer": "https://www.youtube.com/embed/Kv6JWoVKlGY",
+      "imagen": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697140936/before-trilogy/before-midnight_brrsvt.webp",
+      "poster": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697141464/before-trilogy/poster-before-midnight_xh0ges.webp",
+      "stream": "/amazonprimevideo.webp"
+    }
+  ]
+}
