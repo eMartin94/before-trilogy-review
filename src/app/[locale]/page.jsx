@@ -1,3 +1,5 @@
+import Footer from '@/components/Footer';
+import HeroText from '@/components/HeroText';
 import Navbar from '@/components/Navbar';
 import Hero from '@/sections/Hero';
 
@@ -10,6 +12,9 @@ export default function Home() {
       <main className=''>
         <Hero />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

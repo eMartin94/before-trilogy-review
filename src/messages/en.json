@@ -11,48 +11,64 @@
       "title": "About"
     }
   ],
-  "infoTrilogy": [
-    {
+  "infoTrilogy": {
+    "sunrise": {
       "id": "sunrise",
       "title": "Before Sunrise",
-      "year": 1995,
+      "year": "1995",
       "director": "Richard Linklater",
       "duration": "1h 45m",
-      "repart": ["Ethan Hawke as Jesse", "Julie Delpy as Celine"],
+      "repart": "Ethan Hawke as Jesse, Julie Delpy as Celine",
       "review": "\"Before Sunrise\" is a romantic film that follows Jesse and Celine, two young people who meet on a train in Europe and decide to spend a night together in Vienna before separating the next day. The film focuses on their deep emotional connection and the intimate conversations they have while exploring the city. It is a captivating film that captures the magic of a chance encounter and the exploration of human connection.",
-      "genre": ["Romance", "Drama"],
+      "genre": "Romance, Drama",
       "trailer": "https://www.youtube.com/embed/6MUcuqbGTxc",
       "imagen": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697144643/before-trilogy/before-sunrise_kqcilf.webp",
       "poster": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697141463/before-trilogy/poster-before-sunrise_uhcndi.webp",
       "stream": "/hbomax.webp"
     },
-    {
+    "sunset": {
       "id": "sunset",
       "title": "Before Sunset",
-      "year": 2004,
+      "year": "2004",
       "director": "Richard Linklater",
       "duration": "1h 20m",
-      "repart": ["Ethan Hawke as Jesse", "Julie Delpy as Celine"],
+      "repart": "Ethan Hawke as Jesse, Julie Delpy as Celine",
       "review": "\"Before Sunset\" picks up the story of Jesse and Celine nine years after their first encounter in Vienna. Jesse, now a writer, reunites with Celine in Paris during a book promotion tour. The film follows their conversation as they walk around the city and explores how their lives have changed since their first meeting. It is a moving continuation that delves into the complexities of human relationships.",
-      "genre": ["Romance", "Drama"],
+      "genre": "Romance, Drama",
       "trailer": "https://www.youtube.com/embed/oI3UuneLcyU",
       "imagen": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697144643/before-trilogy/before-sunset_f5rmnq.webp ",
       "poster": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697141463/before-trilogy/poster-before-sunset_drwqe4.webp",
       "stream": "/hbomax.webp"
     },
-    {
+    "midnight": {
       "id": "midnight",
       "title": "Before Midnight",
-      "year": 2013,
+      "year": "2013",
       "director": "Richard Linklater",
       "duration": "1h 48m",
-      "repart": ["Ethan Hawke as Jesse", "Julie Delpy as Celine"],
+      "repart": "Ethan Hawke as Jesse, Julie Delpy as Celine",
       "review": "In \"Before Midnight\", the trilogy culminates in Greece, where we follow the life of Jesse and Celine after spending several years together as a couple. The film explores the challenges and tensions that arise in their relationship as they age and face family and personal issues. It is a realistic and bittersweet look at life as a couple.",
-      "genre": ["Romance", "Drama"],
+      "genre": "Romance, Drama",
       "trailer": "https://www.youtube.com/embed/Kv6JWoVKlGY",
       "imagen": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697140936/before-trilogy/before-midnight_brrsvt.webp",
       "poster": "https://res.cloudinary.com/dxbbbewxt/image/upload/v1697141464/before-trilogy/poster-before-midnight_xh0ges.webp",
       "stream": "/amazonprimevideo.webp"
     }
-  ]
+  },
+  "hero": {
+    "title": "\"Before\" Trilogy Reviews",
+    "text": "What makes this trilogy exceptional is its focus on natural and deep dialogue, as well as its ability to capture the evolution of a relationship over the years. The chemistry between Hawke and Delpy is palpable, and their performance is incredibly authentic. The \"Before\" trilogy is a cinematic achievement that invites us to reflect on love, human connection, and the passage of time in a way that few other films achieve. Each movie is like a chapter in the lives of these characters, and together they form an emotional and memorable narrative."
+  },
+  "button": {
+    "textHero": "see trailer",
+    "textFooter": "send"
+  },
+  "footer": {
+    "title": "leave me your comments",
+    "email": "email",
+    "phone": "phone",
+    "inputName": "name",
+    "inputEmail": "email",
+    "inputMessage": "write your comments..."
+  }
 }

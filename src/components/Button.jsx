@@ -1,15 +1,15 @@
-import { styles } from '@/styles';
-import { IconBrandYoutube } from '@tabler/icons-react';
 import React from 'react';
+import { styles } from '@/styles';
 
-const Button = ({ openModal }) => {
+const Button = ({ openModal, text, type, className, icon }) => {
   return (
     <button
+      type={type}
       onClick={openModal}
-      className={`text-white bg-red-600 hover:bg-red-700 px-4 py-2 flex gap-2 rounded-lg ${styles.transition}`}
+      className={`${className} px-4 py-2 ${styles.flexCenter} gap-2 rounded-lg ${styles.transition}`}
     >
-      <IconBrandYoutube />
-      ver trailer
+      {icon}
+      {text}
     </button>
   );
 };
