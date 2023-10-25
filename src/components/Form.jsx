@@ -4,11 +4,17 @@ import Button from './Button';
 import { formReducer, initialState } from '@/utils/formState';
 import { sendEmail } from '@/utils/sendEmail';
 import { useTranslations } from 'next-intl';
+import { IconLoader } from '@tabler/icons-react';
 
 const Form = () => {
   const t = useTranslations();
   const [formData, dispatch] = useReducer(formReducer, initialState);
-  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [fieldValidity, setFieldValidity] = useState({
+    userName: true,
+    userEmail: true,
+    userMessage: true,
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -19,14 +25,26 @@ const Form = () => {
       formData.userMessage
     );
     if (res) {
-      setSuccess(true);
+      setLoading(true);
       dispatch({ type: 'RESET' });
       setTimeout(() => {
-        setSuccess(false);
+        setLoading(false);
       }, 2000);
     } else {
-      setSuccess(false);
+      setLoading(false);
     }
+  };
+
+  const validate = () => {
+    const newFieldValidity = {
+      userName: formData.userName.length > 3,
+      userEmail: formData.userEmail.match(
+        /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+      ),
+      userMessage: formData.userMessage.length > 9,
+    };
+
+    setFieldValidity(newFieldValidity);
   };
 
   const handleChange = (e) => {
@@ -35,6 +53,7 @@ const Form = () => {
       type: 'INPUT_CHANGE',
       payload: { [name]: value },
     });
+    validate();
   };
   return (
     <form
@@ -45,7 +64,9 @@ const Form = () => {
         <input
           type='text'
           placeholder={t('footer.inputName')}
-          className={`px-4 py-2 w-full outline-none bg-gray-100 text-black`}
+          className={`px-4 py-2 w-full outline-none bg-gray-100  ${
+            fieldValidity.userName ? 'text-black' : 'text-red-500'
+          }`}
           name='userName'
           value={formData.userName}
           onChange={handleChange}
@@ -53,7 +74,9 @@ const Form = () => {
         <input
           type='email'
           placeholder={t('footer.inputEmail')}
-          className={`px-4 py-2 w-full outline-none bg-gray-100 text-black`}
+          className={`px-4 py-2 w-full outline-none bg-gray-100 ${
+            fieldValidity.userEmail ? 'text-black' : 'text-red-500'
+          }`}
           name='userEmail'
           value={formData.userEmail}
           onChange={handleChange}
@@ -63,7 +86,9 @@ const Form = () => {
       <textarea
         rows={5}
         placeholder={t('footer.inputMessage')}
-        className='px-4 py-2 outline-none'
+        className={`px-4 py-2 outline-none ${
+          fieldValidity.userMessage ? 'text-black' : 'text-red-500'
+        }`}
         name='userMessage'
         value={formData.userMessage}
         onChange={handleChange}
@@ -71,9 +96,18 @@ const Form = () => {
       <Button
         type='submit'
         text={t('button.textFooter')}
-        className='bg-blue-400 hover:bg-blue-500 text-white flex-row-reverse uppercase font-bold'
+        className='bg-blue-400 hover:bg-blue-500 text-white flex-row-reverse uppercase font-bold disabled:cursor-not-allowed disabled:hover:bg-blue-400'
+        icon={
+          <IconLoader
+            className={`${loading ? 'block animate-spin' : 'hidden'}`}
+          />
+        }
+        disabled={
+          !fieldValidity.userName ||
+          !fieldValidity.userEmail ||
+          !fieldValidity.userMessage
+        }
       />
-      {!success && <span className='text-green-500 text-center'>enviado</span>}
     </form>
   );
 };
