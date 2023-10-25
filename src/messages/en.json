@@ -70,5 +70,9 @@
     "inputName": "name",
     "inputEmail": "email",
     "inputMessage": "write your comments..."
+  },
+  "metadata": {
+    "title": "Trilogy Before",
+    "description": "The \"Before\" trilogy is a cinematic achievement that invites us to reflect on love, human connection, and the passage of time in a way that few other films achieve."
   }
 }
