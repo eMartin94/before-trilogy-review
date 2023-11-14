@@ -17,7 +17,7 @@ export function useAnimationGsap() {
           trigger: slider.current,
           pin: true,
           scrub: 1,
-          snap: 1 / (panels.length - 1),
+          snap: -1 / (panels.length - 1),
           end: () => '+=' + slider.current.offsetWidth,
         },
       });

@@ -18,6 +18,9 @@ const Hero = () => {
   const { slider } = useAnimationGsap();
 
   const { openModal, closeModal, isModalOpen, videoUrl } = useModal();
+  const scrollTo = () => {
+    document.querySelector('#trilogy').scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className='overflow-x-hidden' ref={component}>
@@ -25,11 +28,15 @@ const Hero = () => {
         className={`${styles.flexCenter} relative flex-col h-screen bg-hero-pattern bg-no-repeat bg-cover bg-center px-4`}
       >
         <HeroText />
-        <IconArrowDown className='absolute bottom-8 text-black text-9xl animate-bounce bg-white rounded-full' />
+        <IconArrowDown
+          className='absolute bottom-8 text-black text-9xl animate-bounce bg-white rounded-full'
+          onClick={scrollTo}
+        />
       </div>
       <section
         ref={slider}
         className='min-w-[400vw] h-screen flex flex-wrap bg-green-300'
+        id='trilogy'
       >
         <HeroPanel openModal={openModal} />
       </section>

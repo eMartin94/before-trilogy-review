@@ -15,7 +15,7 @@ const HeroText = () => {
       </h1>
       <p
         ref={(el) => (textHero.current[1] = el)}
-        className='text-white text-center mt-8'
+        className='text-white text-center mt-8 max-w-[80%] mx-auto'
       >
         {t('text')}
       </p>
